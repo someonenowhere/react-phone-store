@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card{
+  border: transparent;
+  transition: all 0.5s linear;
+}
+
+.card-footer{
+  background: transparent;
+  transition: all 0.5s linear;
+  border-top: transparent;
+}
+
+.card:hover{
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-footer{
+  background: rgba(247, 247, 247);
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top{
+  transition: all 0.5s linear;
+}
+
+.img-container:hover .card-img-top{
+  transform: scale(1.2);
+  transition: all 0.5s linear;
+}
+
+.card-btn{ 
+  bottom: 0;
+  right: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.4rem;  
+  color: #fff;
+  background: #5bc0de;
+  position: absolute; 
+  transform: translate(100%, 100%);
+  transition: all 0.5s linear;
+}
+
+.img-container:hover .card-btn{
+  transform: translate(0, 0);
+}
+
+.card-btn:hover{
+  cursor: pointer;
+  color: #000;
+}
+
+.btn-black{
+ background: transparent;
+ text-transform: capitalize;
+ font-size: 0.8rem;
+ color: #333; 
+ border-radius: 0 !important;
+ border: 0.1rem solid #333 !important;
+}
+
+.btn-black:hover {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgb(224, 168, 14);
+}

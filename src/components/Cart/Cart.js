@@ -10,7 +10,7 @@ import CartTotals from './CartTotals';
 export default class Cart extends Component {
   render() {
     return (
-      <section>
+      <section className="container-fluid">
         <ProductConsumer>
           {(value) => {
             const { cart } = value
